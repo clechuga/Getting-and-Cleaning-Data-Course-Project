@@ -1,7 +1,6 @@
 #------------------------------------------------------------------------------------------------------------
 # 1. Merges the training and the test sets to create one data set.
 #------------------------------------------------------------------------------------------------------------
-
 # Reading in the training data.        
 subject_train <- read.table("train/subject_train.txt", header = FALSE, sep = "", col.names="subject")
 x_train <- read.table("train/X_train.txt", header = FALSE, sep = "", comment.char = "")
@@ -26,7 +25,6 @@ activity <- rbind(y_train, y_test)
 # Merging the training and test data by having the subject identifiers (id) as the first column by convention,
 # followed by the feature variable data, and followed by the activity labels.
 merged_data <- cbind(subject, x_train_test, activity)
-
 
 #------------------------------------------------------------------------------------------------------------
 # 2. Extracts only the measurements on the mean and standard deviation for each measurement.
