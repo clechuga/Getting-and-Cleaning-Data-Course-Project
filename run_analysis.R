@@ -76,3 +76,5 @@ cran <- tbl_df(extracted_data)
 tidy_data <- cran %>%
         group_by(subject, activity) %>%
         summarise_all(funs(mean))
+
+write.table(tidy_data, file = "tidy_data_of_averages.txt")

@@ -1,1 +1,1 @@
-﻿# Getting-and-Cleaning-Data-Course-Project
+﻿# UCI Human Activity Recognition Data
